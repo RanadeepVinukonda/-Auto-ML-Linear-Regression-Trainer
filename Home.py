@@ -25,7 +25,7 @@ if uploaded_file:
     st.success("✅ Dataset uploaded successfully!")
 
 # Revert Section
-if st.session_state.df is not None and st.button("🔁 Revert to Original Dataset"):
+if st.session_state.df is not None and st.button("Revert to Original Dataset"):
     st.session_state.df = st.session_state.original_df.copy()
     st.success("✅ Reverted to original dataset.")
 
